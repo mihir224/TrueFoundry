@@ -1,0 +1,14 @@
+.App{
+  display:flex;
+  justify-content: space-between;
+
+  
+}
+body{
+  background-color: #121212;
+  color:white;
+  font-family: 'Montserrat';
+}
+#vl{
+  border-left: 5px solid red;
+}

@@ -1,0 +1,229 @@
+#form{
+    border:1px solid white; 
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition-duration:0.6s ;
+}
+form{
+    border:1px solid white;
+    border-radius: 10px;
+    width:55%;
+    height:auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideLeft;
+}
+.form-item{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-content: center;
+    padding: 5px;
+}
+
+hr{
+    opacity: 0.6;
+    width:100%;
+}
+#category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.type{   
+   padding:20px 0;   
+   display: inline-block;
+}
+.radio-label{
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked+label,.checked{
+    background-color: white;
+    border: 1px solid #121212;
+    color:#121212;
+}
+.item-label{
+    text-align:start;
+    font-size: 14px;
+    font-weight: bold;
+    padding:5px 0 2px 0;
+}
+.select-item{
+    display: flex;
+    padding:5px;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 500;
+}
+.input{
+    width:14em;
+    height:1.5em;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+select{
+    cursor: pointer;
+}
+.btn{
+    margin:5px 0;
+    padding:3px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border:1px solid white;
+    border-radius: 4px;
+    cursor:pointer;
+}
+#submit-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    align-self:flex-end;
+    padding-right: 5px;
+
+}
+p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+  
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    border-radius: 50%;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+  .toggle{
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      
+      width:53%;
+      height: 2em;
+    }
+#welcome-txt{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding:15px;
+    flex-direction: column;
+    line-height: 2em;
+
+}
+
+#home-list{
+    padding: 10px;
+    margin: 5px; 
+    font-weight: 400;
+}
+
+#sent-data{
+    text-align:justify;
+    padding:0 10px;
+    margin:0;
+    height:100vh;
+    overflow-y: scroll;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideLeft;
+}
+
+@media screen and (max-width:1200px){
+    .item-label{
+        text-align: center;
+    }
+    .select-item{
+        flex-direction: column;
+       align-items: center;
+    }
+    form{
+        width: auto;
+    }
+    .toggle-switch {
+        width: 50px;
+        height: 20px;
+      }   
+      .slider:before {
+        height: 14px;
+        width: 14px;
+      }
+      .toggle{
+         align-self: center;
+      }
+      #submit-btns{
+       flex-direction: column;
+    }
+      
+}
+@media screen and (max-width:1400px){
+    #category{
+        flex-direction: column;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+} 
+
