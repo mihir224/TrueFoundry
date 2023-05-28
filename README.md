@@ -7,6 +7,8 @@ In this project, I developed a JSON editor from which useful information can be 
 ## Work Flow
 Initally, the parsed JSON from the user input was stored globally in the redux store which was then use by the form component to find certain elements in the JSON array and create a dynamic form accordingly. As the user submits the dynamically generated form, the data that has to be sent in the form of JSON to the backend server, is shown to the user. 
 
+**The form is data specific and works only for specific type of json that is included within the repository**
+
 ## Setting-Up
 
 ## Clone the repo:
